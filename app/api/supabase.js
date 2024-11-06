@@ -12,3 +12,23 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
     detectSessionInUrl: false,
   },
 })
+
+const uploadImage = async (imageUri) => {
+  try {
+    const { data, error } = await supabase.storage
+      .from('user-images')
+      .upload(`public/${Date.now()}.jpg`, {
+        uri: imageUri,
+        type: 'image/jpeg',
+        name: 'upload.jpg',
+      });
+
+    if (error) {
+      throw error;
+    }
+    return data;
+  } catch (error) {
+    console.error('Error uploading image:', error);
+    Alert.alert('Upload Failed', 'Could not upload the image.');
+  }
+};
