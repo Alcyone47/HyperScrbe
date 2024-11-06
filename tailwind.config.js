@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./app/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
+  content: [
+    './app/**/*.{js,jsx,ts,tsx}', // Ensure this includes all your app's components
+    './components/**/*.{js,jsx,ts,tsx}', // Ensure all component files are covered
+    './node_modules/nativewind/**/*.{js,jsx,ts,tsx}', // Ensure NativeWind files are covered
+  ],
+  presets: [require("nativewind/preset")], // This is correct for NativeWind v4
   theme: {
     extend: {
       colors: {

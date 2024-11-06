@@ -15,11 +15,14 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@babel/runtime": "^7.26.0",
     "@expo/vector-icons": "^14.0.2",
     "@react-native-async-storage/async-storage": "1.23.1",
     "@react-navigation/native": "^6.0.2",
     "@rneui/themed": "^4.0.0-rc.8",
     "@supabase/supabase-js": "^2.46.1",
+    "autoprefixer": "^10.4.20",
+    "babel-preset-expo": "^11.0.15",
     "expo": "~51.0.28",
     "expo-constants": "~16.0.2",
     "expo-font": "~12.0.9",
@@ -31,24 +34,26 @@
     "expo-system-ui": "~3.0.7",
     "expo-web-browser": "~13.0.3",
     "nativewind": "^4.1.23",
+    "postcss": "^8.4.47",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.74.5",
+    "react-native-dotenv": "^3.4.11",
     "react-native-gesture-handler": "~2.16.1",
     "react-native-reanimated": "~3.10.1",
-    "react-native-safe-area-context": "^4.10.5",
+    "react-native-safe-area-context": "4.10.5",
     "react-native-screens": "3.31.1",
-    "react-native-web": "~0.19.10",
-    "tailwindcss": "^3.4.14"
+    "react-native-web": "~0.19.10"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0",
+    "@babel/core": "^7.26.0",
     "@types/jest": "^29.5.12",
     "@types/react": "~18.2.45",
     "@types/react-test-renderer": "^18.0.7",
     "jest": "^29.2.1",
     "jest-expo": "~51.0.3",
     "react-test-renderer": "18.2.0",
+    "tailwindcss": "^3.4.14",
     "typescript": "~5.3.3"
   },
   "private": true
